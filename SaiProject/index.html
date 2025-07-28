@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SaiHotel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  
+  <link href="/style.css" rel="stylesheet">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">SaiHotel</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#rooms">Rooms</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#facilities">Facilities</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero text-center">
+  <div class="container" data-aos="fade-up">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h1>Feel at Home in the Heart of Hyderabad</h1>
+        <p>Safe, Spacious & Serene Hostel for Working Women</p>
+        <a href="tel:+917416003526" class="btn btn-primary mt-3 me-2">📞 Call Now</a>
+        <a href="https://wa.me/" class="btn btn-success mt-3">💬 WhatsApp</a>
+      </div>
+      <div class="col-md-6 d-flex flex-wrap justify-content-center gap-3">
+        <!-- Canva-style collage images -->
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Hostel Reference" class="img-fluid rounded shadow" style="max-width: 100%; max-height: 180px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Rooms -->
+<section id="rooms" class="py-5">
+  <div class="container position-relative">
+    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
+      <h2 class="section-title mb-0 flex-grow-1 text-center text-md-start" style="font-size:2.2rem;">Our Rooms</h2>
+      <button id="viewAllRoomsBtn" class="btn btn-outline-primary ms-md-3 mt-3 mt-md-0" style="border-radius:20px;font-weight:500;">
+        View All Rooms
+      </button>
+    </div>
+    <div class="row g-4" id="roomsList">
+      <!-- Only 3 rooms visible by default -->
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card room-card">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Four Sharing">
+          <div class="card-body text-center">
+            <h5>Four Sharing</h5>
+            <p>₹8,000/month</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card room-card">
+          <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Three Sharing">
+          <div class="card-body text-center">
+            <h5>Three Sharing</h5>
+            <p>₹10,000/month</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card room-card">
+          <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Two Sharing">
+          <div class="card-body text-center">
+            <h5>Two Sharing</h5>
+            <p>₹12,000/month</p>
+          </div>
+        </div>
+      </div>
+      <!-- Hidden rooms -->
+      <div class="col-md-4 d-none extra-room" data-aos="zoom-in">
+        <div class="card room-card">
+          <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Single Room">
+          <div class="card-body text-center">
+            <h5>Single Room</h5>
+            <p>₹15,000/month</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-none extra-room" data-aos="zoom-in">
+        <div class="card room-card">
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Deluxe Room">
+          <div class="card-body text-center">
+            <h5>Deluxe Room</h5>
+            <p>₹18,000/month</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-none extra-room" data-aos="zoom-in">
+        <div class="card room-card">
+          <img src="https://images.unsplash.com/photo-1509228468518-c5eeecbff44a?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Suite Room">
+          <div class="card-body text-center">
+            <h5>Suite Room</h5>
+            <p>₹22,000/month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Facilities -->
+<section id="facilities" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title">Facilities We Offer</h2>
+    <div class="row text-center g-4">
+      <div class="col-6 col-md-3" data-aos="fade-up">
+        <div class="facility-icon">📶</div>
+        <p>Wi-Fi</p>
+        <!-- <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded mb-2" alt="Wi-Fi"> -->
+      </div>
+      <div class="col-6 col-md-3" data-aos="fade-up">
+        <div class="facility-icon">🛏️</div>
+        <p>Comfortable Beds</p>
+        <!-- <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded mb-2" alt="Beds"> -->
+      </div>
+      <div class="col-6 col-md-3" data-aos="fade-up">
+        <div class="facility-icon">🛁</div>
+        <p>Hot Water</p>
+        <!-- <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3fdc?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded mb-2" alt="Hot Water"> -->
+      </div>
+      <div class="col-6 col-md-3" data-aos="fade-up">
+        <div class="facility-icon">🍽️</div>
+        <p>Homely Meals</p>
+        <!-- <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded mb-2" alt="Meals"> -->
+      </div>
+      <div class="col-6 col-md-3" data-aos="fade-up">
+        <div class="facility-icon">🧺</div>
+        <p>Laundry</p>
+        <!-- <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded mb-2" alt="Laundry"> -->
+      </div>
+      <div class="col-6 col-md-3" data-aos="fade-up">
+        <div class="facility-icon">🚪</div>
+        <p>24/7 Security</p>
+        <!-- <img src="https://images.unsplash.com/photo-1519121782439-2c5f2c2a3b89?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded mb-2" alt="Security"> -->
+      </div>
+      <div class="col-6 col-md-3" data-aos="fade-up">
+        <div class="facility-icon">📺</div>
+        <p>Common TV</p>
+        <!-- <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded mb-2" alt="TV"> -->
+      </div>
+      <div class="col-6 col-md-3" data-aos="fade-up">
+        <div class="facility-icon">🅿️</div>
+        <p>Parking</p>
+        <!-- <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded mb-2" alt="Parking"> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials" class="py-5">
+  <div class="container">
+    <h2 class="section-title">What Our Guests Say</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6" data-aos="fade-up">
+        <div class="testimonial-card">
+          <p>“Very neat and safe place for girls. Location is perfect and food is homely.”</p>
+          <footer class="text-end">– Keerthi Reddy</footer>
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle mt-3" width="60" alt="Guest">
+        </div>
+      </div>
+      <div class="col-md-6" data-aos="fade-up">
+        <div class="testimonial-card">
+          <p>“Staff is friendly and the rooms are spacious. Highly recommended!”</p>
+          <footer class="text-end">– Priya Sharma</footer>
+          <img src="https://randomuser.me/api/portraits/women/65.jpg" class="rounded-circle mt-3" width="60" alt="Guest">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title">Our Gallery</h2>
+    <div class="gallery-row-scroll">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" class="gallery-img-scroll" alt="Gallery"/>
+      <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=400&q=80" class="gallery-img-scroll" alt="Gallery"/>
+      <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" class="gallery-img-scroll" alt="Gallery"/>
+      <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80" class="gallery-img-scroll" alt="Gallery"/>
+      <!-- Add more images as needed -->
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="row">
+      <div class="col-md-6" data-aos="fade-up">
+        <p><strong>📞 Phone:</strong> +91 7416003526</p>
+        <p><strong>📧 Email:</strong> contact@loftinnpg.com</p>
+        <p><strong>📍 Address:</strong> Arunodaya Colony, Madhapur, Hyderabad, Telangana</p>
+      </div>
+      <div class="col-md-6" data-aos="fade-up">
+        <iframe src="https://maps.google.com/maps?q=Madhapur,Hyderabad&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          width="100%" height="250" style="border:0;" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p>&copy; 2025 LoftInn Hostel. All rights reserved.</p>
+    <p>
+      <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+      <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+    </p>
+  </div>
+</footer>
+<script src="/script.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+   AOS.init();
+
+ 
+</script>
+
+
+</body>
+</html>
