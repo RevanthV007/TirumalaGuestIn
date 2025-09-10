@@ -52,22 +52,3 @@ ScrollReveal().reveal(".news__card", {
   ...scrollRevealOption,
   interval: 500,
 });
-
-
-
-tsParticles.load("tsparticles", {
-  fullScreen: { enable: true },
-  particles: {
-    number: { value: 50 },
-    color: { value: "#bfa14a" },
-    shape: { type: "circle" },
-    size: { value: 4 },
-    move: { enable: true, speed: 2 },
-    links: { enable: true, distance: 150, color: "#bfa14a" }
-  },
-  interactivity: {
-    events: { onHover: { enable: true, mode: "repulse" } },
-    modes: { repulse: { distance: 100 } }
-  }
-});
-
