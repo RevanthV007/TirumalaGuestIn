@@ -52,18 +52,20 @@ ScrollReveal().reveal(".news__card", {
   ...scrollRevealOption,
   interval: 500,
 });
-tsParticles.load("tsparticles", {
-  fullScreen: { enable: true },
+tsParticles.load("tsparticles-header", {
+  fullScreen: { enable: false }, // confined to #tsparticles-header
   particles: {
-    number: { value: 50 },
+    number: { value: 60 },
     color: { value: "#bfa14a" },
     shape: { type: "circle" },
     size: { value: 4 },
-    move: { enable: true, speed: 2 },
-    links: { enable: true, distance: 150, color: "#bfa14a" }
+    move: { enable: true, speed: 1.5 },
+    links: { enable: true, distance: 140, color: "#bfa14a" }
   },
   interactivity: {
     events: { onHover: { enable: true, mode: "repulse" } },
-    modes: { repulse: { distance: 100 } }
-  }
+    modes: { repulse: { distance: 120 } }
+  },
+  background: { color: "transparent" }
 });
+
